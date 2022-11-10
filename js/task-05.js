@@ -6,13 +6,13 @@ const name = document.querySelector('#name-output')
 
 
 
-form.addEventListener("change" ,(event) => {
-    if (event.currentTarget.value.trim() !== '') {
-        name.textContent = event.currentTarget.value;
-    } else {
-        name.textContent = "Anonymous"
-    }
-})
+// form.addEventListener("change" ,(event) => {
+//     if (event.currentTarget.value.trim() !== '') {
+//         name.textContent = event.currentTarget.value;
+//     } else {
+//         name.textContent = "Anonymous"
+//     }
+// })
 
 
 
@@ -27,10 +27,10 @@ form.addEventListener("change" ,(event) => {
 // INPUT
 
 
-// form.addEventListener("input" ,(event) => {
-//     if (event.currentTarget.value.trim() !== '') {
-//         name.textContent = event.currentTarget.value;
-//     } else {
-//         name.textContent = "Anonymous"
-//     }
-// })
+form.addEventListener("input" ,(event) => {
+    if (event.currentTarget.value.trim() !== '') {
+        name.textContent = event.currentTarget.value;
+    } else {
+        name.textContent = "Anonymous"
+    }
+})

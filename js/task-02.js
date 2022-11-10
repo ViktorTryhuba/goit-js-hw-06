@@ -6,12 +6,13 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-
-  const list = document.querySelector(`ul#ingredients`)
-
-for (const foodType of ingredients) {
-    const item = document.createElement(`li`);
-    item.textContent = foodType
-    item.classList.add(`item`)
-      list.append(item)
-}
+const storageEll = [];
+  const list = document.querySelector(`ul#ingredients`);
+  
+  ingredients.forEach((ingredient) => {
+const itemEL = document.createElement("li");
+  itemEL.classList.add("item");
+  itemEL.textContent = ingredient;
+  storageEll.push(itemEL);
+  })
+  list.append(...storageEll);
